@@ -1,6 +1,6 @@
 #signup_form{
     width: 35%;
-    height: 500px;
+    height: 600px;
     float: right;
     background-color: rgb(253, 215, 253);
     margin-right: 10%;
@@ -87,5 +87,5 @@ button:hover {
 .container {
  padding:16px;
   background-color: thistle;
-}
+
 }
