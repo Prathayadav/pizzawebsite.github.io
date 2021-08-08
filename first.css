@@ -1,0 +1,100 @@
+
+nav ul li a{
+text-decoration: none;
+color: gray;
+font-family: Bradley Hand ITC;
+font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    font-size: x-large;
+    color: crimson;
+    }
+    body{
+        background-color: rgb(248, 248, 248);
+    }
+
+ h1{
+    color: black;
+    font-family: Freestyle Script;
+   
+    
+}
+.carousel .carousel-item {
+    height: 500px;
+  }
+#hey{
+    width: 35%;
+    height: 70%;
+    float: right;
+}
+#hey p{
+    
+    font-family: Bradley Hand ITC;
+    font-size: large;
+}
+#marq1
+{
+    width: 60%;
+    color: cornsilk;
+    background-color: crimson;
+    height: 40px;
+    padding-top: 5px;
+    font-size: x-large;
+}
+.terms_and_condition{
+    color:#2329c4; 
+    width: 10px;
+    height: 10px;
+
+    
+}
+#img2{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+    height: 70%;
+    float: left;
+}
+
+
+#logo{
+width: 50%;
+height: 20%;
+   
+}
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li{
+    padding: 10px 20px;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 33px;
+    
+}
+
+@media only screen and (max-width:767px){
+nav ul{
+ height: 230px;
+ flex-direction: column;
+ text-align: center;
+}
+
+} ;
+
+ul{
+    padding: 10px;
+    
+        display: flex;
+        justify-content: center;
+        list-style: none;
+}
+ul img
+{width: 120px; height: 60px; top:0}
