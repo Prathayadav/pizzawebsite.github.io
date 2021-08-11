@@ -31,7 +31,7 @@
                         <p id="terms">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                   
                         <div class="clearfix">
-                          <button type="button" id="loginbtn"onclick="">Login</button>
+                          <button type="button" id="loginbtn"onclick="login_call()">Login</button>
                           <button type="submit" id="signupbtn">Sign Up</button>
                         </div>
                       </div>
@@ -41,5 +41,11 @@
 
             </div>
         </div>
+    <script>
+        function login_call()
+        {
+            window.replace('login.html');
+        }
+    </script>
     </body>
 </html>
