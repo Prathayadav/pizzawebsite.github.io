@@ -1,4 +1,5 @@
 <html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <head>
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
@@ -9,21 +10,17 @@
                 
                 <div id="id01" class="modal">
                    
-                    <form class="modal-content" action="">
+                        <form ng-app="" name="myform">
                       <div class="container">
                         <marquee id="marq1"direction="right" scrollamount="6">Login</marquee>
                         <p>Please enter username and password </p>
                         <hr>
                        
-                        <input type="email" placeholder="Enter Email" name="email" required>
-                  
-                       
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                       
+                        <input type="email"  placeholder="Enter email"name="myadress" ng-model="text">
+                        <span ng-show="myform.myadress.$error.email">not valid email</span>
+                        <input type="password"  placeholder="Enter password"name="myadress" ng-model="text">
+                        <span ng-show="myform.myadress.$error.password">please set atleast 8 numer</span>
                         
-                        
-                        <div class="clearfix">
                           <button type="submit" id="loginbtn">Log in</button>
 
                           <button type="button" id="signupbtn" onclick="signup()">Sign up</button>
