@@ -16,14 +16,26 @@ p{
     font-family: Bradley Hand ITC;
     font-size: 24px;
 }
+#others{
+    
 
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
 #others img{
     
-    width:80%;
-    height:50%;
+    width:350px;
+    height:400px;
+    margin-left: 15%;
 }
 
 #pizza img{
-    width:70%;
-    height:60%;
+    width:350px;
+    height:300px;
+    margin-left: 15%;
 }
+.card4{
+    font-size: 18px;
+}
+ 
