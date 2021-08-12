@@ -34,12 +34,13 @@
 
     <h1> pizza buonissima</h1>
     <hr>
-    <div id="pizza">
+    <div id="pizza" onclick="addtocart()">
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
           <div class="card">
             <img src="pizza1.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
+              
               <h5 class="card-title">Marinara</h5>
               <p class="card-text">  Marinara [mah-ree-NAH-rah]: tomato sauce, garlic and oregano.</p>
               <a href="#" class="btn btn-danger">Add to cart</a>
@@ -138,6 +139,11 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+      function addtocart(){
+             window.location.replace("cart.html")
+           }
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

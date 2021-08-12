@@ -1,29 +1,18 @@
-var MongoClient = require('mongodb').MongoClient;
-var express =require('express');
-app = express();
-var bodyParser = require('body-parser');
-app.use(express.static(__dirname + '/public'));
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 
-app.use(bodyParser.urlencoded(
-    {
-        extended:false
-    }
-));
+// Connection URL
+const url = 'mongodb://localhost:27017';
 
-const port = 4000;
+// Database Name
+const dbName = 'myproject';
 
-app.use(bodyParser.json());
+// Use connect method to connect to the server
+MongoClient.connect(url, function(err, client) {
+  assert.equal(null, err);
+  console.log("Connected successfully to server");
 
-app.get('/',function(req,res)
-{
+  const db = client.db(dbName);
 
+  client.close();
 });
-
-app.post('/',function(req,res)
-{
-  
-
-});
-
-
-app.listen(port);
